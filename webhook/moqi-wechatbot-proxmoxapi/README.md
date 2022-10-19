@@ -1,0 +1,1 @@
+alertmanager 通过企业微信机器人报警，调用proxmox接口，对应pve主机到使用人。
