@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	opsadmin      string = "xuang@moqi.ai"
+	opsadmin      string = "xuang@test.com"
 	version       string = "v1.0"
 	help          bool
 	disable       string   //命令行传入的需要关闭的指标
