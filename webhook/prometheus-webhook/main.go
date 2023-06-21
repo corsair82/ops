@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"prometheus-webhook/model"
+	"time"
 
 	//	"syscall"
 	//	"unsafe"
@@ -33,6 +34,7 @@ func main() {
 			//	AlertSpeak(v.Annotations["summary"])
 			log.Println(v.Annotations["summary"])
 			model.AlertSound("./soundfiles/alert.mp3")
+			time.Sleep(100 * time.Millisecond)
 		}
 		c.JSON(http.StatusOK, gin.H{"message": " successful receive alert notification message!"})
 

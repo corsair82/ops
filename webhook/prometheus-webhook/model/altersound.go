@@ -42,9 +42,12 @@ func AlertSound(soundfile string) {
 	// Remember that you should **not** create more than one context
 	otoCtx, readyChan, err := oto.NewContext(samplingRate, numOfChannels, audioBitDepth)
 	if err != nil {
+
 		defer func() {
-			err1 := recover()
-			log.Println(err1)
+			if v := recover(); v != nil {
+				log.Println(v)
+				go AlertSound(soundfile)
+			}
 		}()
 		panic("oto.NewContext failed: " + err.Error())
 	}

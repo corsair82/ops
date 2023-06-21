@@ -1,0 +1,10 @@
+Users:
+  - Name: "test1"
+    AccessKeyId: "LTAI5tsdfAxQPFcXUGkuVCy"
+    AccessKeySecret: "t20GZNYmhqDCOzq964CL0XDeXKYHwd"
+  - Name: "test2"
+    AccessKeyId: "LTAI5tLqMACfjpCOzq96TrnQZ"
+    AccessKeySecret: "w7WwNT3Z7X5S6ojnuoOJ1dpmEWTA2s"
+  - Name: "test3"
+    AccessKeyId: "LTAI5tNyMobtzerG4cZR46cE"
+    AccessKeySecret: "TocsuMobtj0cYzerGmXtxnu8VFlk"
